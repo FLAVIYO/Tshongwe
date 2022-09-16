@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(image/back.JPG);
+}
+.wrapper {
+    background: rgb(225, 218, 218);
+    width: 350px;
+    border-radius: 18px;
+    color: rgb(12, 11, 9);
+
+}
+
+/* css for the signup form*/
+
+.form {
+    padding: 30px 35px;
+
+}
+.form header {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-bottom: transparent;
+}
+.form form {
+    margin: 20px;
+}
+.form form .error-text {
+    color: rgb(248, 149, 82);
+    background: transparent;
+    padding: 4px 1px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.form form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background: transparent;
+    color: rgb(20, 19, 17);
+    padding-bottom: 5px;
+}
+.form form .field i {
+    position: absolute;
+}
+.form form .input input {
+    height: 30px;
+    width: 100%;
+    font-size: 10px;
+    padding: 10px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-weight: bold;
+    justify-content: center;
+
+}
+.form form .button input {
+    height: 35px;
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    background: black;
+    color: rgb(246, 238, 238);
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.form .link a {
+    color: rgb(250, 21, 17);
+    text-align: center;
+}
+.form .link a :hover {
+    color: rgb(35, 11, 252);
+}
+
+/* css for user form*/
+
+.user {
+    background: rgb(225, 218, 218);
+    width: 400px;
+    border-radius: 10px;
+    color: rgb(12, 11, 9);
+    padding: 25px 30px;
+
+}
+.user header,
+.userList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    position: relative;
+}
+.user header .content,
+.userList {
+    display: flex;
+}
+.user header .content img,
+.userList a .content img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user header .details {
+    margin-left: 15px;
+    padding-bottom: 15px;
+    margin-top: 7px;
+    font-size: 12px;
+    padding-top: 7px;
+}
+.logOut {
+    color: aliceblue;
+    font-size: 10px;
+    background: rgb(52, 49, 49);
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-weight: bold;
+
+
+}
+.user .search .text {
+    font-size: 12px;
+}
+.user .search input {
+    position: relative;
+    height: 32px;
+    width: 85%;
+    border: 1px solid white;
+    font-size: 10px;
+    border-radius: 1px 0 0 1px;
+    outline: none;
+    margin: 1;
+}
+.search button {
+    position: absolute;
+    width: 47px;
+    margin: 1;
+    height: 32px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    background: rgb(64, 55, 55);
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 0 5px 5px 0;
+}
+.user2 {
+
+    max-height: 450px;
+    overflow-y: auto;
+}
+.user2::-webkit-scrollbar {
+    width: 0px;
+}
+.userList a .content img {
+    height: 40px;
+    width: 40px;
+
+}
+.userList a .status-dot {
+    position: absolute;
+    color: rgb(126, 164, 69);
+    left: 300px;
+    top: 17px;
+    bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+/* for php to show offine status*/
+.userList a .status-dot.offline {
+    color: gray;
+}
+.userList a .content .details {
+    margin-left: 50px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.userList a {
+    margin-bottom: 15px;
+    page-break-after: 10px;
+    border-bottom-color: wheat;
+}
+.userList a:last-child {
+    border: none;
+    margin-bottom: 0px;
+}
+.user p {
+    color: rgb(161, 154, 154);
+}
+.details {
+    margin-top: -37px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+/*  css for chat area */
+.chat-area{
+    display: grid;
+    height: 550px;
+}
+.chat-area header {
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.chat-area header .back-icon {
+    font-size: 12px;
+    color: black;
+    margin-top: 7px;
+}
+ .content img {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+}
+.chat-area header .content .details {
+    position: relative;
+    bottom: 12px;
+}
+.chat-box {
+    display: flex;
+    height: 430px;
+    width: 350px;
+    background: linear-gradient(rgb(105, 218, 218),rgb(234, 234, 122));
+    padding: 7px 30px 10px 20px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    border-radius: 5% 5% 0 0;
+}
+.chat-box::-webkit-scrollbar{
+    width: 0;
+}
+.chat-box .details{
+    display: grid;
+    margin-top:0;
+    word-wrap:break-word;
+    width: 300px;
+}
+.chat-box .chat{
+    margin: 10px 7px;
+}
+.chat-box p{
+    padding: 5px 10px;
+    color: rgb(10, 10, 9);
+}
+.chat-box img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.chat-box .details .chat{
+    display: flex;
+    margin-top: 12px;
+    width: 300px;
+    word-wrap: break-word;
+}
+.chat-box .details .chat.outgoing {
+    margin-left: auto;
+    max-width: calc(100% - 90px);
+}
+.chat-box .details .chat.outgoing p{
+    background: wheat;
+    font-size: 12px;
+    border-radius: 15px 15px 0 15px;
+   
+}
+.chat-box .details .chat.incoming p{
+    background: gray;
+    font-size: 12px;
+    border-radius:15px 15px 15px 0;
+}
+.chat-box .details .chat.incoming{
+    margin-left: 10px;
+    margin-right: auto;
+    max-width:calc(100% -130px );
+}
+.chat-box .details .chat.incoming img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 7px 6px;
+}
+.type-mes{
+    display: flex;
+    justify-content: space-between;
+}
+.type-mes input{
+    width:calc(100% - 25px);
+    padding: 2px 10px;
+}
+.type-mes button{
+   width: calc(100% - 310px);
+}

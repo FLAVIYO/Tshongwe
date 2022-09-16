@@ -1,0 +1,96 @@
+/* 
+    Author: Thabang Shongwe;
+    Theme: Restaurant ;
+    version: 1.0;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    border: 0px solid rgb(5, 5, 5);
+    padding: 1%;
+    width: 80%;
+    margin: 1% auto;
+
+}
+.btn{
+    background-color: rgb(250, 250, 250);
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+.btn:hover{
+    color: rgb(86, 248, 10);
+}
+.btn2{
+    background-color: rgb(250, 250, 250);
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+.btn2:hover{
+    color: rgb(59, 240, 59);
+}
+.text-cbd{
+    text-align: center;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.tbl{
+    width: 100%;
+}
+.tbl_form{
+    width:30%;
+}
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 0.5%;
+    text-align: left;
+}
+table tr td{
+    padding: 00.5%;
+
+}
+/* styling menu */
+
+.menu{
+    text-align: center;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff4757;
+}
+.menu ul li a:hover{
+    color:#b5e795;
+}
+/* styling content */
+
+.content{
+    margin: 3% 0;
+}
+.col4{
+    width: 80%;
+    background-color: rgb(243, 243, 223);
+    margin: 1.5%;
+    padding: 2%;
+    text-align: center;
+}
+
+/* styling the footer */
+
+.footer{
+    background-color: #ff4757;
+    color: white;
+}
